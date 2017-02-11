@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>WordRTC</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.22.2/js/medium-editor.js"></script>
+		<script type="text/javascript" src="grabzit.min.js"></script>
+		<script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.22.2/css/medium-editor.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.22.2/css/themes/beagle.css">
+		<link rel="stylesheet" href="wordrtc.css">
+
+	</head>
+	<body>
+		<div id="topbar">
+			<div id="logo">&#60;word<font color="#2ac1cf">rtc</font>&#62; <small><sup>alpha</sup></small></div>
+			<div id="link"></div>
+			<a href="javascript:createPDF()"><div class="button">Salva in PDF</div></a>
+			<a href="javascript:doAudioCall()"><div class="button" id="callButton" style="visibility:hidden">Attiva microfono</div></a>
+		</div>
+		<br><br><br>
+		<div id="documento" class="editable page" style="overflow:scroll;"></div>
+		<script src="wordrtc.js"></script>
+	</body>
+</html>
